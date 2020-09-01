@@ -7,7 +7,7 @@ function log1(a) {
   return a;
 }
 
-// Here are two examples of anonymous function expressions (the name is not used):
+// Here is an example of an anonymous function expression (the name is not used):
 
 const log2 = function (a) {
   console.log(a);
@@ -20,10 +20,12 @@ const log3 = (a) => {
   return a;
 };
 
+const log4 = (a) => a; // () only needed if you have more than 1 argument and if there is only one statement, then that is returned
+
 // It is also possible to provide a name inside the definition in order to create a named function expression:
 // This can be a valuable tool when debugging.
 
-const log4 = function logIt(a) {
+const log5 = function logIt(a) {
   console.log(a);
   return a;
 };
@@ -31,6 +33,7 @@ const log4 = function logIt(a) {
 console.log(log2("second"));
 console.log(log3("third"));
 console.log(log4("fourth"));
+console.log(log5("fifth"));
 
 // Function declarations are hoisted.  This means you call call the function before it is defined.
 // Function expressions are not hoisted.  This means the variable is hoisted, but the function itself is not hoisted.
