@@ -9,12 +9,13 @@ function log1(a) {
 
 // Here are two examples of anonymous function expressions (the name is not used):
 
-const log2 = (a) => {
+const log2 = function (a) {
   console.log(a);
   return a;
 };
 
-const log3 = function (a) {
+// Arrow functions are always anonymous can be written in more concise ways.
+const log3 = (a) => {
   console.log(a);
   return a;
 };
